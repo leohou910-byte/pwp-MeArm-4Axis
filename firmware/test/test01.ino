@@ -1,22 +1,30 @@
 #include <Servo.h>
 Servo myservo1, myservo2, myservo3, myservo4;
+
+int vrPin1 = A0;
+int vrPin2 = A1;
+int vrPin3 = A2;
+int vrPin4 = A3;
+
 int ang1, ang2, ang3, ang4;
 int val1, val2, val3, val4;
-int vrPin1, vrPin2, vrPin3, vrPin4;
 
-void setup(){
-    Serial.begin(9600);
-    
-    // init
+void initSystem() {
     val1 = 90;
     val2 = 90;
     val3 = 90;
     val4 = 90;
 
-    myservo1.write(val1);
-    myservo2.write(val2);
-    myservo3.write(val3);
-    myservo4.write(val4);
+    // myservo1.write(val1);
+    // myservo2.write(val2);
+    // myservo3.write(val3);
+    // myservo4.write(val4);
+}
+
+void setup(){
+    Serial.begin(9600);
+    
+    initSystem();
 }
 
 void loop(){
@@ -25,7 +33,7 @@ void loop(){
     myservo3.attach(5);
     myservo4.attach(9);
     
-    ang1 = analogRead(vrPin1);                                                                                                                                                                     
+    ang1 = analogRead(vrPin1);                                                  
     ang2 = analogRead(vrPin2);
     ang3 = analogRead(vrPin3);
     ang4 = analogRead(vrPin4);
