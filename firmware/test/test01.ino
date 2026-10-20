@@ -38,8 +38,6 @@ void loop(){
     ang3 = analogRead(vrPin3);
     ang4 = analogRead(vrPin4);
 
-    delay(10);
-
     // ===M1===
     if (ang1 > 600 && val1 < 165) {
         val1 += 2;
@@ -48,7 +46,7 @@ void loop(){
     }
     myservo1.write(val1);
     Serial.print("M1:") ;
-    Serial.print(val1 ) ;
+    Serial.print(val1) ;
 
     // ===M2===
     if (ang2 > 600 && val2 < 165) {
@@ -58,7 +56,7 @@ void loop(){
     }
     myservo2.write(val2);
     Serial.print("  M2:") ;
-    Serial.print(val2 ) ;
+    Serial.print(val2) ;
     
     // ===M3===
     if (ang3 > 600 && val3 < 165) {
