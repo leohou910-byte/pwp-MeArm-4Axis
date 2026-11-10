@@ -27,6 +27,8 @@ void setup(){
     initSystem();
 }
 
+void servoo(int &val, int range1_max, int range1_min, int range2_max, int range2_min, bool reverse = false);
+
 void loop(){
     myservo1.attach(6);
     myservo2.attach(7);
