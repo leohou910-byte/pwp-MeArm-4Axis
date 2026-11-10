@@ -40,9 +40,9 @@ void loop(){
 
     // ===M1===
     if (ang1 > 600 && val1 < 165) {
-        val1 += 2;
-    } else if (ang1<400 && val1>44) {
         val1 -= 2;
+    } else if (ang1<400 && val1>44) {
+        val1 += 2;
     }
     myservo1.write(val1);
     Serial.print("M1:") ;
