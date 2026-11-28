@@ -18,17 +18,17 @@
 ## 作品主要部分
 
 ### 3D 列印部件
-<img src = "images/20261006_090924.jpg" alt="PartsUp" width="400" />
+<img src = "images/parts/20261006_090924.jpg" alt="PartsUp" width="400" />
 
 ---
 
 ### 組裝結果
-<img src="images/20261124_094605.jpg" width="500">
+<img src="images/operation/20261124_094605.jpg" width="500">
 
 ---
 
 ### 夾取測試
-<img src="images/20261124_094511.jpg" width="400">
+<img src="images/operation/20261124_094511.jpg" width="400">
 
 
 ## 開發團隊與分工
